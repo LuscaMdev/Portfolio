@@ -1,4 +1,4 @@
-const username = 'lucasmizaelsoares012-png'; 
+const username = 'LuscaMdev'; 
 const container = document.querySelector('.github-projetos');
 
 async function fetchGitHubProjects() {
@@ -12,8 +12,8 @@ async function fetchGitHubProjects() {
             const emConstrucao = repo.topics && repo.topics.includes('em-construcao');
             
             const statusBadge = emConstrucao 
-                ? `<span class="badge status-construcao">🚧 Em Construção</span>`
-                : `<span class="badge status-pronto">✅ Pronto</span>`;
+                ? `<span class="badge status-construcao"> Em Construção</span>`
+                : `<span class="badge status-pronto"> Pronto</span>`;
 
             const donoDoProjeto = repo.owner.login.toLowerCase() === username.toLowerCase() 
                 ? 'Autor Principal' 
